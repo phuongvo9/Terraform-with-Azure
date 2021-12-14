@@ -2,7 +2,7 @@ terraform {
     required_providers {
         azurerm = {
             source = "hashicorp/azurerm"
-            version = "~>2.71.0"
+            version = "=2.71.0"
         }
     }
 }
@@ -15,7 +15,7 @@ provider "azurerm" {
 }
 
 
-resource "azurerum_resource_group" "example" {
+resource "azurerm_resource_group" "example" {
     name = "terraform-resourcegroup"
     location = "East Asia"
   
