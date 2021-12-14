@@ -29,3 +29,9 @@ resource "azurerm_virtual_network" "example-vnet" {
     address_space = ["10.0.0.0/16"]
 }
 
+# Create a internal subnet in the "example-vnet"
+resource "azurerm_subnet" "example-subnet" {
+    name = "example-subnet"
+    virtual_network_name = azurerm_virtual_network.example-vnet.name
+    address_prefixes = ["10.0.1.0/24"]
+}
