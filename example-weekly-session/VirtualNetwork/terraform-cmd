@@ -1,0 +1,10 @@
+# Login to Azure
+
+az login
+az account set --subscription "MyLabSubscription"
+
+terraform init
+
+terraform plan
+
+terraform apply
