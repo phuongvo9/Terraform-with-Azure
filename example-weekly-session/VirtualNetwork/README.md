@@ -1,4 +1,4 @@
-#Explanation
+# Explanation
 
 * The terraform {} block is required. Terraform knows which provider (Azure, AWS, GCP,…) to download from the Terraform Registry
 * The "azurerm" provider's source is defined as hashicorp/azurerm which stands for registry.terraform.io/providers/hashicorp/azurerm
