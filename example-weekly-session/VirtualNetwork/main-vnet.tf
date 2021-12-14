@@ -18,7 +18,6 @@ provider "azurerm" {
 resource "azurerm_resource_group" "example" {
     name = "terraform-resourcegroup"
     location = "East Asia"
-  
 }
 
 # Create a virtual network in that resource group
